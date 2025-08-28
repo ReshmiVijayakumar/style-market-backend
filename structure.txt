@@ -1,0 +1,71 @@
+style-market-backend/
+│── src/
+│   ├── config/                # Configurations (DB, Redis, env, etc.)
+│   │   ├── db.ts
+│   │   ├── redis.ts
+│   │   └── env.ts
+│   │
+│   ├── models/                # ORM models (Prisma/Sequelize/TypeORM schemas)
+│   │   └── product.model.ts
+│   │   └── user.model.ts
+│   │   └── order.model.ts
+│   │   └── cart.model.ts
+│   │
+│   ├── interfaces/            # TypeScript interfaces & DTOs
+│   │   └── product.interface.ts
+│   │   └── user.interface.ts
+│   │
+│   ├── middlewares/           # Express middlewares
+│   │   ├── auth.middleware.ts
+│   │   ├── error.middleware.ts
+│   │   ├── validate.middleware.ts
+│   │
+│   ├── utils/                 # Helper functions
+│   │   ├── logger.ts
+│   │   ├── responseHandler.ts
+│   │   └── hashPassword.ts
+│   │
+│   ├── services/              # Business logic layer
+│   │   ├── product.service.ts
+│   │   ├── user.service.ts
+│   │   ├── cart.service.ts
+│   │   ├── order.service.ts
+│   │   └── payment.service.ts
+│   │
+│   ├── controllers/           # Route handlers (call services)
+│   │   ├── product.controller.ts
+│   │   ├── user.controller.ts
+│   │   ├── cart.controller.ts
+│   │   ├── order.controller.ts
+│   │   └── auth.controller.ts
+│   │
+│   ├── routes/                # API endpoints
+│   │   ├── product.routes.ts
+│   │   ├── user.routes.ts
+│   │   ├── cart.routes.ts
+│   │   ├── order.routes.ts
+│   │   └── auth.routes.ts
+│   │
+│   ├── jobs/                  # Background jobs/queues (BullMQ)
+│   │   └── orderEmail.job.ts
+│   │
+│   ├── docs/                  # Swagger / API documentation
+│   │   └── swagger.yaml
+│   │
+│   ├── app.ts                 # Express app setup
+│   └── server.ts              # Entry point (starts server)
+│
+├── prisma/ (if Prisma ORM)    # Prisma schema & migrations
+│   └── schema.prisma
+│
+├── tests/                     # Unit & integration tests
+│   ├── product.test.ts
+│   └── user.test.ts
+│
+├── .env.example               # Example env variables
+├── .gitignore
+├── docker-compose.yml         # DB + Redis setup
+├── Dockerfile
+├── package.json
+├── tsconfig.json
+└── README.md

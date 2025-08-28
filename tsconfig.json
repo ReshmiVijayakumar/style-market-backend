@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                   // Modern JS features (works well with Node.js 14+)
+    "module": "commonjs",                 // Node.js uses CommonJS by default
+    "lib": ["ES2020"],                    // Include modern JS libraries
+    "strict": true,                       // Enable strict type-checking
+    "esModuleInterop": true,              // Allow default imports from CommonJS modules
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,                 // Skip type checking of declaration files
+    "outDir": "./dist",                   // Output folder for compiled JS
+    "rootDir": "./src",                   // Source code folder
+    "moduleResolution": "node",           // Resolve modules the Node.js way
+    "resolveJsonModule": true,            // Allow importing JSON files
+    "sourceMap": true,                    // Generate .map files for debugging
+    "noImplicitAny": true                 // Warn if types are missing
+  },
+  "include": ["src"],                     // Compile everything inside src/
+  "exclude": ["node_modules", "dist"]     // Skip node_modules & output folder
+}

@@ -1,0 +1,23 @@
+{
+  "name": "style-market-backend",
+  "version": "1.0.0",
+  "description": "Style Market Backend — A production-ready RESTful API for an e-commerce platform, built with Node.js, Express, TypeScript, and PostgreSQL. Supports user authentication, product catalog, cart &amp; wishlist management, and secure checkout with payments.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReshmiVijayakumar/style-market-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReshmiVijayakumar/style-market-backend/issues"
+  },
+  "homepage": "https://github.com/ReshmiVijayakumar/style-market-backend#readme"
+}
